@@ -1,0 +1,23 @@
+# .security-triage.yaml
+version: "1.0"
+project: "rdma-core"
+last_updated: "2026-07-30T11:24:00Z"
+
+repository_exposure_classification:
+  visibility: "Internal"
+  basis: "origin remote is an internal NVIDIA forge (git-nbu.nvidia.com, mlnx_ofed/rdma-core)"
+  confirmed_by: "Jared Holzman <jholzman@nvidia.com>"
+  date: "2026-07-30"
+
+service_exposure_classification:
+  tier: "External / Regulated"
+  confidence: "high"
+  basis: "externally distributed OFED/enterprise and distro userspace RDMA stack; customer-facing libraries and daemons on the RDMA memory/device security boundary"
+  confirmed_by: "Jared Holzman <jholzman@nvidia.com>"
+  date: "2026-07-30"
+
+false_positives: []
+
+accepted_risks: []
+
+suppressed_cves: []
